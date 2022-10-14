@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.9rem 2rem;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn_secondary {
+  background: none;
+  border: 1px solid #707070;
+  color: #707070;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn_secondary:hover {
+  color: #fff;
+  background: #5f6a29;
+  border: none;
+}
+
+.btn_secondary-inverse {
+  background: #5f6a29;
+  border: none;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn_secondary-inverse:hover {
+  background: none;
+  border: 1px solid #707070 !important;
+  color: #707070;
+  border: none;
+}
+
+.text_hover {
+  color: #707070;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.text_hover:hover {
+  color: #fff;
+}
+
+.icon_hover {
+  fill: #707070;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon_hover:hover {
+  fill: #fff;
+}
+
+.form-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.form-container .error {
+  background: #bb0724;
+  width: 300px;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.form-container .error h1 {
+  font-family: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.6rem 0.5rem;
+  text-align: center;
+}
+
+.form {
+  width: 300px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #212421;
+}
+
+.form .title {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 800;
+  color: #fff;
+}
+
+.form .input-field {
+  border-bottom: 2px solid #707070;
+}
+
+.form .input-field input {
+  background: none;
+  width: 100%;
+  padding: 0.5rem 0rem;
+  margin: auto;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  color: #707070;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.form .input-field input:-internal-autofill-selected {
+  background-color: none !important;
+}
+
+.form .form-controll {
+  width: 85%;
+}
+
+body {
+  background: url("../assets/images/black_paper/black_paper.png");
+  background-repeat: repeat;
+  overflow-y: hidden;
+}

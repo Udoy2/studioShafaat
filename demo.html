@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo slider</title>
+    <link rel="stylesheet" href="./assets/packages/lightslider-master/dist/css/lightslider.css">
+</head>
+<body>
+    <ul id="light-slider">
+        <li>
+            <h3>First Slide</h3>
+            <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
+        </li>
+        <li>
+            <h3>Second Slide</h3>
+            <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+        </li>
+        <li>
+            <h3>Second Slide</h3>
+            <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+        </li>
+        <li>
+            <h3>Second Slide</h3>
+            <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+        </li>
+        <li>
+            <h3>Second Slide</h3>
+            <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+        </li>
+        <li>
+            <h3>Second Slide</h3>
+            <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+        </li>
+        <li>
+            <h3>Second Slide</h3>
+            <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+        </li>
+        <li>
+            <h3>Second Slide</h3>
+            <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+        </li>
+        <li>
+            <h3>Second Slide</h3>
+            <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+        </li>
+        <li>
+            <h3>Second Slide</h3>
+            <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
+        </li>
+        ...
+    </ul>
+    
+    <script src="./assets/packages/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./assets/packages/lightslider-master/dist/js/lightslider.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+        $('#project_cards').lightSlider({
+            item:4,
+            loop:false,
+            slideMove:2,
+            easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+            speed:600,
+            responsive : [
+                {
+                    breakpoint:800,
+                    settings: {
+                        item:3,
+                        slideMove:1,
+                        slideMargin:6,
+                      }
+                },
+                {
+                    breakpoint:480,
+                    settings: {
+                        item:2,
+                        slideMove:1
+                      }
+                }
+            ]
+        });  
+      });
+    </script>
+    
+</body>
+</html>
